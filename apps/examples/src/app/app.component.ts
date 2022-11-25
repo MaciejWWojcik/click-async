@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { Observable, of, tap } from 'rxjs';
 
 @Component({
   selector: 'click-async-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  template: '<button [clickAsync]="runSomethingAsync">Click me</button>',
 })
 export class AppComponent {
-  title = 'examples';
+  runSomethingAsync(): Observable<string> {
+    return of('👀').pipe(tap(console.log));
+  }
 }
