@@ -1,4 +1,5 @@
 # click-async
+[![npm version](https://badge.fury.io/js/click-async.svg)](https://badge.fury.io/js/click-async)
 
 Are you tired of subscribing and unsubscribing when calling a service that does some asynchronous action on click?
 Use the **clickAsync**!
@@ -48,3 +49,10 @@ export class SomeModule {}
 ```
 
 Enjoy!
+
+## Installation
+
+```bash
+npm install --save click-async
+```
+
